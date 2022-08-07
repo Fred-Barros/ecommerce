@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico" />
+
+    <!-- Inclusão dos estilos comuns -->
+    <include src="/assets/pages/styles.html"></include>
+
+    <!-- Inclusão do estilo específico -->
+    <link rel="stylesheet" href="../css/add-product.css" />
+
+    <script defer src="/assets/js/login-validation.js"></script>
+    <script defer src="/assets/js/footer-validation.js"></script>
+    <script defer src="/assets/js/includeHTML.js"></script>
+
+    <title>Produtos Similares</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__left">
+          <h1>
+            <a href="../../index.html "
+              ><img
+                src="../imgs/logo.svg"
+                alt="logo alura geek"
+                class="header__logo"
+            /></a>
+          </h1>
+          <div class="header__search-box">
+            <input
+              type="text"
+              class="header__search-box__text-input"
+              placeholder="O que deseja encontrar?"
+            />
+            <a href="#"
+              ><img
+                src="../imgs/lupa.svg"
+                alt=""
+                class="header__search-box__lupa"
+            /></a>
+          </div>
+        </div>
+        <a href="#" class="header__search-icon--mobile"
+          ><img src="../imgs/gray-magnifier-icon.svg" alt="lupa de busca"
+        /></a>
+      </header>
+      <main class="product">
+        <img
+          src="../imgs/caneca-stormtrooper-media.jpg"
+          alt="boneco storm trooper"
+          class="product__img"
+        />
+        <div class="product__details">
+          <h2 class="product__title">Caneca Stormtrooper</h2>
+          <p class="product__price">R$ 60,00</p>
+          <p class="product__description">
+            Voluptas voluptatum quibusdam similique, class debitis alias
+            maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
+            minima malesuada habitasse distinctio sequi aliqua malesuada.
+            Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
+            Commodo, quia ridiculus doloribus vero dictum? Penatibus donec
+            placeat faucibus, dolorum do. Animi porta anim magnam
+          </p>
+        </div>
+      </main>
+      <section class="similar__box">
+        <h3 class="similar__box__title">Produtos similares</h3>
+        <div class="similar__box__cards">
+          <div class="similar__card">
+            <img
+              src="../imgs/xbox-one-joystick.jpg"
+              alt="controle para console xbox one"
+              class="similar__card__img"
+            />
+            <h4 class="similar__card__title">Controle Xbox One</h4>
+            <p class="similar__card__price">R$60,00</p>
+            <a href="#" class="similar__card__details">Ver produto</a>
+          </div>
+          <div class="similar__card">
+            <img
+              src="../imgs/darth-vader-head.jpg"
+              alt="cabeça Darth Vader"
+              class="similar__card__img"
+            />
+            <h4 class="similar__card__title">Cabeça Darth Vader</h4>
+            <p class="similar__card__price">R$60,00</p>
+            <a href="#" class="similar__card__details">Ver produto</a>
+          </div>
+          <div class="similar__card">
+            <img
+              src="../imgs/yoda-action-figure.jpg"
+              alt="boneco mestre Yoda"
+              class="similar__card__img"
+            />
+            <h4 class="similar__card__title">Mestre Yoda</h4>
+            <p class="similar__card__price">R$60,00</p>
+            <a href="#" class="similar__card__details">Ver produto</a>
+          </div>
+          <div class="similar__card">
+            <img
+              src="../imgs/stormtrooper-action-figure.jpg"
+              alt="boneco storm trooper"
+              class="similar__card__img"
+            />
+            <h4 class="similar__card__title">Storm Trooper</h4>
+            <p class="similar__card__price">R$60,00</p>
+            <a href="#" class="similar__card__details">Ver produto</a>
+          </div>
+          <div class="similar__card baby-yoda">
+            <img
+              src="../imgs/baby-yoda-action-figure.png"
+              alt="boneco baby yoda"
+              class="similar__card__img"
+            />
+            <h4 class="similar__card__title">Baby Yoda</h4>
+            <p class="similar__card__price">R$60,00</p>
+            <a href="#" class="similar__card__details">Ver produto</a>
+          </div>
+          <div class="similar__card sith-costume">
+            <img
+              src="../imgs/sith.jpg"
+              alt="fantasia sith"
+              class="similar__card__img"
+            />
+            <h4 class="similar__card__title">Fantasia Sith</h4>
+            <p class="similar__card__price">R$60,00</p>
+            <a href="#" class="similar__card__details">Ver produto</a>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Inclusão do rodapé -->
+     <include src="/assets/pages/footer.html"></include>
+    </div>
+  </body>
+</html>

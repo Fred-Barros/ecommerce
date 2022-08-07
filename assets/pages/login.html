@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico" />
+
+    <!-- Inclusão dos estilos comuns -->
+    <include src="/assets/pages/styles.html"></include>
+
+    <!-- Inclusão do estilo específico -->
+    <link rel="stylesheet" href="/assets/css/login.css" />
+
+    <script defer src="/assets/js/login-validation.js"></script>
+    <script defer src="/assets/js/footer-validation.js"></script>
+    <script defer src="/assets/js/includeHTML.js"></script>
+    <title>Sessão Login</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Inclusão do cabeçalho -->
+      <include src="/assets/pages/header.html"></include>
+
+      <section class="login">
+        <form action="" class="login__form">
+          <h2 class="login__form__title">Iniciar Sessão</h2>
+          <input
+            class="login__form__email"
+            id="email-input"
+            type="email"
+            placeholder="Escreva seu email"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            required
+          />
+          <span class="login__form__error-msg" data-invalid-msg="email">Por favor, preencha este campo com um e-mail válido.</span>
+          <input
+            class="login__form__password"
+            id="password-input"
+            type="password"
+            placeholder="Escreva sua senha"
+            required
+          />
+          <span class="login__form__error-msg" data-invalid-msg="password">Por favor, preencha este campo com uma senha válida.</span>
+          <button class="login__form__btn" id="login-form-btn" disabled>Entrar</button>
+        </form>
+      </section>
+ 
+      <!-- Inclusão do rodapé -->
+       <include src="/assets/pages/footer.html"></include>
+      </div>
+  </body>
+</html>
